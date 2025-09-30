@@ -1,5 +1,5 @@
 public class Basico extends Enemigo {
-    public Basico(String nombre) { super(nombre, 70, 12); }
+    public Basico(String nombre) { super(nombre, 70, 15); }
 
     @Override public void turno(Combatiente[] enemigos, Combatiente[] aliados) {
         for (Combatiente c : aliados) if (c.estaVivo()) { atacar(c); break; }
